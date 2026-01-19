@@ -1,0 +1,41 @@
+{
+  "theme": "aviation",
+  "hero": {
+    "title": "Defining the Digital Co-Pilot for Aviation",
+    "subTitle": "From intelligence analysis to maintenance dispatch, driving every decision with rigorous aviation standards.",
+    "bgImage": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80"
+  },
+  "features": [
+    {
+      "title": "AI Aeronautical Intelligence Analysis",
+      "subtitle": "Aeronautical Intelligence",
+      "description": "Automatically parses NOTAMs and meteorological reports. Transforms complex text information into visualized flight risk maps to assist dispatchers in rapid decision-making.",
+      "mediaType": "image",
+      "mediaSrc": "https://images.unsplash.com/photo-1540962351504-03099e0a754b?auto=format&fit=crop&q=80",
+      "layout": "left"
+    },
+    {
+      "title": "Smart Ticketing & Revenue Management",
+      "subtitle": "Smart Ticketing",
+      "description": "Real-time monitoring of network-wide ticket inventory. Millisecond-level automatic fare adjustment and re-booking based on Spec-defined revenue rules to maximize route revenue.",
+      "mediaType": "image",
+      "mediaSrc": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80",
+      "layout": "right"
+    },
+    {
+      "title": "Maintenance Repair & Overhaul Tracking (MRO)",
+      "subtitle": "MRO Tracking",
+      "description": "Digitization of Aircraft Maintenance Manuals (AMM). Agents directly associate Fault Codes with maintenance job cards, scheduling appropriate parts and engineers.",
+      "mediaType": "image",
+      "mediaSrc": "https://images.unsplash.com/photo-1580436541340-e7a32d5f84cb?auto=format&fit=crop&q=80",
+      "layout": "left"
+    }
+  ],
+  "summary": {
+    "title": "Aviation-Grade Safety Assurance",
+    "items": [
+      { "title": "99.999% Precision", "desc": "Zero-tolerance algorithm design ensuring flight safety." },
+      { "title": "Real-time Response", "desc": "Millisecond-level data processing to cope with sudden weather changes." }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "navbar": {
+    "brand": "Specient",
+    "links": [
+      {"name": "Home", "url": "/"},
+      {"name": "Technology", "url": "/technology"},
+      {"name": "Solutions", "url": "/#solutions", "is_dropdown": true},
+      {"name": "Self-Evolution", "url": "/optimization"},
+      {"name": "Developers", "url": "/portal/login"}
+    ],
+    "login": "Console",
+    "demo": "Book Demo"
+  },
+  "footer": {
+    "copyright": "© 2026 Specient. All rights reserved."
+  },
+  "ui": {
+    "view_simulation": "View Simulation",
+    "launch_sandbox": "Launch Sandbox",
+    "experience_demo": "Try Demo Now",
+    "video_placeholder": "[Video Placeholder]",
+    "read_more": "Read More",
+    "self_optimization_badge": "Self-Optimization",
+    "validating_specs": "Validating Specs...",
+    "agent_active": "Agent Active"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "heroSection": {
+    "title": "Specs Driving Intelligence, Redefining Industry Rules",
+    "subTitle": "From vague instructions to precise execution. SpecAgent AI combines strict specifications (Specs) with the flexibility of Generative AI to provide zero-error intelligent agent services for government, aviation, research, and other sectors.",
+    "ctaButtons": [
+      {
+        "text": "Explore Solutions",
+        "link": "#solutions",
+        "type": "primary"
+      },
+      {
+        "text": "Watch Demo",
+        "link": "/portal/demo/general",
+        "type": "secondary"
+      }
+    ]
+  },
+  "valueProposition": {
+    "title": "Why Choose Spec-Driven?",
+    "description": "Traditional LLMs are prone to hallucinations. We transform industry standards and operational specifications (Specs) into code constraints that Agents not only understand but strictly adhere to.",
+    "items": [
+      {
+        "icon": "lock",
+        "title": "Deterministic",
+        "desc": "Deterministic"
+      },
+      {
+        "icon": "ruler",
+        "title": "Explainable",
+        "desc": "Explainable"
+      },
+      {
+        "icon": "shield",
+        "title": "Compliant",
+        "desc": "Compliant"
+      }
+    ]
+  },
+  "industries": [
+    {
+      "id": "government",
+      "name": "government & Enterprise",
+      "desc": "Expert in Data Governance and Document Automation",
+      "longDesc": "Deep integration with government data specifications for automated document generation, approval process automation, and policy compliance checks.",
+      "link": "/solutions/government",
+      "tags": ["Doc Gen", "Compliance", "Data Gov"],
+      "icon": "building",
+      "gridClass": "md:col-span-2 md:row-span-2",
+      "color": "from-blue-600 to-blue-800",
+      "bgImage": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2670&auto=format&fit=crop"
+    },
+    {
+      "id": "aviation",
+      "name": "Aviation",
+      "desc": "Ensuring Precision Scheduling and Maintenance for Every Flight",
+      "longDesc": "Based on AMM manuals and operation specifications, providing intelligent maintenance assistants and flight scheduling optimization solutions.",
+      "link": "/solutions/aviation",
+      "tags": ["Scheduling", "Maintenance", "Safety"],
+      "icon": "plane",
+      "gridClass": "md:col-span-1 md:row-span-2",
+      "color": "from-sky-500 to-indigo-600",
+      "bgImage": "https://images.unsplash.com/photo-1436853378352-e52147848eb3?q=80&w=2574&auto=format&fit=crop"
+    },
+    {
+      "id": "education",
+      "name": "Education",
+      "desc": "AI Instructors, Reshaping Vocational Skill Heritage",
+      "longDesc": "Transforming expert experience into standard SOP courses, providing personalized tutoring and practical scoring.",
+      "link": "/solutions/education",
+      "tags": ["SOP Teaching", "Smart Scoring"],
+      "icon": "academic",
+      "gridClass": "md:col-span-1 md:row-span-1",
+      "color": "from-emerald-500 to-teal-700",
+      "bgImage": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2670&auto=format&fit=crop"
+    },
+    {
+      "id": "research",
+      "name": "Research",
+      "desc": "Accelerating Experiments, From Literature to Discovery",
+      "longDesc": "Automating literature reviews and experimental planning to ensure traceability of research data.",
+      "link": "/solutions/research",
+      "tags": ["Exp Design", "Lit Analysis"],
+      "icon": "flask",
+      "gridClass": "md:col-span-1 md:row-span-1",
+      "color": "from-purple-500 to-violet-700",
+      "bgImage": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=2670&auto=format&fit=crop"
+    },
+    {
+      "id": "design",
+      "name": "Design",
+      "desc": "Generating Compliant Designs Directly from Spec Docs",
+      "longDesc": "Parsing Design System documents to automatically generate brand-compliant UI/UX assets.",
+      "link": "/solutions/design",
+      "tags": ["Design Token", "UI Gen", "Validation"],
+      "icon": "swatch",
+      "gridClass": "md:col-span-2 md:row-span-1",
+      "color": "from-pink-500 to-rose-600",
+      "bgImage": "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=2564&auto=format&fit=crop"
+    },
+    {
+      "id": "other",
+      "name": "More Fields",
+      "desc": "SpecAgent architecture applies to any complex scenario relying on strict specs.",
+      "longDesc": "Medical, Legal, Financial Compliance... Wherever there are rules, SpecAgent delivers value.",
+      "link": "/solutions/other",
+      "tags": ["Medical", "Legal", "Finance"],
+      "icon": "dots",
+      "gridClass": "md:col-span-2 md:row-span-1",
+      "color": "from-gray-600 to-gray-800",
+      "bgImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2672&auto=format&fit=crop"
+    }
+  ]
+}

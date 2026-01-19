@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}SpecAgent AI - 核心技术{% endblock %}
+
+{% block content %}
+<!-- Technology Hero -->
+<section class="relative py-20 bg-spec-bg overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-spec-earth/5 via-transparent to-spec-navy/5"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold text-spec-navy mb-6">
+            {{ page_data.hero.title }}
+        </h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
+            {{ page_data.hero.description }}
+        </p>
+    </div>
+</section>
+
+<!-- Concept Spec Flow -->
+<section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-spec-navy mb-16 text-center">{{ page_data.concept.title }}</h2>
+        
+        <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-4 relative">
+            <!-- Connecting Line (Desktop) -->
+            <div class="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-gradient-to-r from-transparent via-spec-earth to-transparent opacity-30 transform -translate-y-1/2 z-0"></div>
+
+            {% for step in page_data.concept.steps %}
+            <!-- Step Item -->
+            <div class="relative z-10 w-full md:w-1/3 bg-spec-bg p-6 rounded-xl border border-spec-earth/20 shadow-lg transform hover:-translate-y-2 transition-transform duration-300 h-64 flex flex-col">
+                <div class="text-xs uppercase tracking-wider text-spec-earth mb-2 font-bold">{{ step.label }}</div>
+                <div class="flex-grow flex items-center justify-center">
+                    <p class="text-spec-navy font-mono text-sm leading-relaxed break-words w-full text-center">
+                        {% if step.type == 'code' %}
+                        <code class="text-xs text-left block bg-white border border-gray-200 p-2 rounded text-spec-earth font-mono overflow-x-auto shadow-sm">
+                            {{ step.content }}
+                        </code>
+                        {% else %}
+                        "{{ step.content }}"
+                        {% endif %}
+                    </p>
+                </div>
+            </div>
+            
+            {% if not forloop.last %}
+            <!-- Arrow (Mobile) -->
+            <div class="md:hidden text-spec-earth text-2xl">⬇</div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Architecture Layers -->
+<section class="py-20 bg-spec-bg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-spec-navy mb-16 text-center">{{ page_data.architecture.title }}</h2>
+        
+        <div class="space-y-6 max-w-4xl mx-auto">
+            {% for layer in page_data.architecture.layers %}
+            <div class="bg-white border-l-4 border-spec-earth p-8 rounded-r-lg shadow-md hover:bg-gray-50 transition-colors flex flex-col md:flex-row items-start md:items-center">
+                <div class="md:w-1/3 mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold text-spec-navy">{{ layer.name }}</h3>
+                </div>
+                <div class="md:w-2/3">
+                    <p class="text-gray-600">{{ layer.desc }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Advantages -->
+<section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center animate-fade-in-up">
+            {% for adv in page_data.advantages %}
+            <div class="p-8 border border-spec-earth/20 rounded-xl bg-spec-bg hover:border-spec-earth transition-colors group shadow-lg">
+                <h3 class="text-2xl font-bold text-spec-navy mb-4 group-hover:text-spec-earth transition-colors">{{ adv.title }}</h3>
+                <p class="text-gray-600">{{ adv.desc }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

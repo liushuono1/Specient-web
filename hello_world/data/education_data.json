@@ -1,0 +1,33 @@
+{
+  "theme": "education",
+  "hero": {
+    "title": "规模化的因材施教",
+    "subTitle": "职业培训 AI 化增强。不仅是教员的助手，更是机构的数智化大脑。",
+    "bgImage": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80"
+  },
+  "features": [
+    {
+      "title": "Agent 辅助教员与 AI 陪练",
+      "subtitle": "AI Tutor",
+      "description": "每个学生都拥有专属的 AI 陪练。基于 Spec 定义的教学大纲，Agent 进行 24/7 的答疑与模拟考核，解放教员精力。",
+      "mediaType": "image",
+      "mediaSrc": "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&q=80",
+      "layout": "left"
+    },
+    {
+      "title": "培训机构全生命流程管理",
+      "subtitle": "Lifecycle Management",
+      "description": "从招生线索清洗、学生档案建立，到结业后的就业跟踪。Agent 自动化处理繁琐的行政事务，提升运营效率。",
+      "mediaType": "image",
+      "mediaSrc": "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80",
+      "layout": "right"
+    }
+  ],
+  "summary": {
+    "title": "重塑教育体验",
+    "items": [
+      { "title": "个性化学习路径", "desc": "千人千面，根据学员进度自动调整难度。" },
+      { "title": "沉浸式互动", "desc": "将枯燥的教材转化为生动的交互式课程。" }
+    ]
+  }
+}

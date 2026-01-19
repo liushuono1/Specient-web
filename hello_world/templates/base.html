@@ -1,0 +1,113 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}SpecAgent AI{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'spec-bg': '#FAF8F2',       /* 浅米色背景 */
+                        'spec-earth': '#C49A48',    /* 土黄主色 */
+                        'spec-navy': '#1B325F',     /* 海军蓝辅助色 */
+                        'spec-gold': '#D4AF37',     /* 金色点缀 */
+                        'spec-dark-earth': '#A07A30'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: #FAF8F2;
+            color: #1B325F;
+        }
+        .glass-nav {
+            background: rgba(250, 248, 242, 0.85);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(196, 154, 72, 0.2);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0; /* Initially hidden */
+        }
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+    </style>
+    {% block extra_head %}{% endblock %}
+</head>
+<body class="flex flex-col min-h-screen bg-spec-bg text-spec-navy">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300" id="mainSync">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-bold text-spec-navy">SpecAgent<span class="text-spec-earth">.AI</span></a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="/" class="hover:text-spec-earth text-spec-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">{{ common_data.navbar.home }}</a>
+                        <a href="/technology" class="hover:text-spec-earth text-spec-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">{{ common_data.navbar.technology }}</a>
+                        <a href="/optimization" class="hover:text-spec-earth text-spec-navy px-3 py-2 rounded-md text-sm font-medium transition-colors">{{ common_data.navbar.optimization }}</a>
+                        <div class="relative group">
+                            <button class="hover:text-spec-earth text-spec-navy px-3 py-2 rounded-md text-sm font-medium transition-colors flex items-center">
+                                {{ common_data.navbar.solutions }}
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+                            <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden group-hover:block border border-spec-earth/20">
+                                <div class="py-1">
+                                    <a href="/solutions/government" class="block px-4 py-2 text-sm text-gray-700 hover:bg-spec-earth/10 hover:text-spec-navy">{{ common_data.navbar.solutions_list.gov }}</a>
+                                    <a href="/solutions/aviation" class="block px-4 py-2 text-sm text-gray-700 hover:bg-spec-earth/10 hover:text-spec-navy">{{ common_data.navbar.solutions_list.aviation }}</a>
+                                    <a href="/solutions/education" class="block px-4 py-2 text-sm text-gray-700 hover:bg-spec-earth/10 hover:text-spec-navy">{{ common_data.navbar.solutions_list.edu }}</a>
+                                    <a href="/solutions/design" class="block px-4 py-2 text-sm text-gray-700 hover:bg-spec-earth/10 hover:text-spec-navy">{{ common_data.navbar.solutions_list.design }}</a>
+                                    <a href="/solutions/research" class="block px-4 py-2 text-sm text-gray-700 hover:bg-spec-earth/10 hover:text-spec-navy">{{ common_data.navbar.solutions_list.research }}</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="?lang={% if current_lang == 'en' %}zh{% else %}en{% endif %}" class="flex items-center text-spec-navy hover:text-spec-earth px-3 py-2 text-sm font-medium transition-colors" title="Switch Language">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" /></svg>
+                            {% if current_lang == 'en' %}CN{% else %}EN{% endif %}
+                        </a>
+                        <a href="/portal/login" class="bg-spec-earth text-white hover:bg-spec-dark-earth px-4 py-2 rounded-md text-sm font-bold transition-all shadow-md">{{ common_data.navbar.portal }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow pt-16">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white py-8 mt-12 border-t border-spec-earth/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-gray-600">
+            <p>&copy; 2026 SpecAgent AI. All rights reserved.</p>
+            <div class="mt-2 space-x-4">
+               <a href="#" class="hover:text-spec-earth">Privacy Policy</a>
+               <a href="#" class="hover:text-spec-earth">Terms of Service</a>
+            </div>
+            {% if icp_info %}
+            <div class="mt-4 pt-4 border-t border-gray-200 text-xs text-gray-500">
+                <p>{{ icp_info }}</p>
+            </div>
+            {% endif %}
+        </div>
+    </footer>
+
+</body>
+</html>

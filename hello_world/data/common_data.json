@@ -1,0 +1,27 @@
+{
+  "navbar": {
+    "brand": "Specient",
+    "links": [
+      {"name": "首页", "url": "/"},
+      {"name": "核心技术", "url": "/technology"},
+      {"name": "行业方案", "url": "/#solutions", "is_dropdown": true},
+      {"name": "自我演进", "url": "/optimization"},
+      {"name": "开发者", "url": "/portal/login"}
+    ],
+    "login": "控制台登录",
+    "demo": "预约演示"
+  },
+  "footer": {
+    "copyright": "© 2026 Specient. All rights reserved."
+  },
+  "ui": {
+    "view_simulation": "查看模拟演练",
+    "launch_sandbox": "启动沙箱",
+    "experience_demo": "立即体验 Demo",
+    "video_placeholder": "[视频演示占位符]",
+    "read_more": "了解更多",
+    "self_optimization_badge": "自我演进架构",
+    "validating_specs": "正在验证 Spec...",
+    "agent_active": "Agent 已激活"
+  }
+}

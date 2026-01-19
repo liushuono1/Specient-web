@@ -1,0 +1,60 @@
+{
+  "hero": {
+    "title": "What is Spec-Driven?",
+    "description": "Large Language Models excel at divergence, while industrial applications require convergence. Spec is the 'rational shackle' we place on the model, ensuring every output strictly adheres to business specifications."
+  },
+  "concept": {
+    "title": "From Natural Language to Strict Specs",
+    "steps": [
+      {
+        "label": "User Instruction",
+        "content": "\"Book me a flight to Beijing, Air China, economy class, strict policy check.\"",
+        "type": "natural"
+      },
+      {
+        "label": "SpecAgent Transformation Layer",
+        "content": "NLP Parsing + Formal Verification",
+        "type": "processing"
+      },
+      {
+        "label": "Execute Spec",
+        "content": "{ \"action\": \"book_flight\", \"params\": { \"airline\": \"CA\", \"class\": \"economy\", \"policy_check\": \"strict\" } }",
+        "type": "code"
+      }
+    ]
+  },
+  "architecture": {
+    "title": "Technical Architecture",
+    "layers": [
+      {
+        "name": "Perception Layer",
+        "desc": "Multi-modal input processing: text instructions, image recognition, sensor data reading."
+      },
+      {
+        "name": "Reasoning Layer",
+        "desc": "Spec Engine + LLM Brain. Real-time validation of business logic, rejecting hallucinations, ensuring compliance."
+      },
+      {
+        "name": "Actuation Layer",
+        "desc": "API connectors, RPA robots, physical device interfaces, translating decisions into actions."
+      }
+    ]
+  },
+  "advantages": [
+    {
+      "key": "Safety",
+      "title": "Safe & Reliable",
+      "desc": "Any operation deviating from the Spec is instantly intercepted, ensuring the system operates within safe boundaries."
+    },
+    {
+      "key": "Interoperability",
+      "title": "Seamless Integration",
+      "desc": "Easily integrates into existing ERP, CRM, OA systems without refactoring existing IT infrastructure."
+    },
+    {
+      "key": "Customizability",
+      "title": "Low-Code Customization",
+      "desc": "Customers don't need to know code; simply define business Specs in natural language to generate dedicated Agents."
+    }
+  ]
+}

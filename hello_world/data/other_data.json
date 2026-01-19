@@ -1,0 +1,33 @@
+{
+  "theme": "default",
+  "hero": {
+    "title": "更多领域的无限可能",
+    "subTitle": "医疗、法律、金融合规... 只要有规则，SpecAgent 就能发挥价值。",
+    "bgImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2672&auto=format&fit=crop"
+  },
+  "features": [
+    {
+      "title": "医疗合规与诊断辅助",
+      "subtitle": "Healthcare",
+      "description": "基于临床指南 Specs，辅助医生进行鉴别诊断，并确保处方开具符合医保合规性。",
+      "mediaType": "image",
+      "mediaSrc": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80",
+      "layout": "left"
+    },
+    {
+      "title": "法律文书与合同审查",
+      "subtitle": "Legal Tech",
+      "description": "自动审查合同条款风险，基于最新法条 Specs 生成法律意见书，大幅降低法务成本。",
+      "mediaType": "image",
+      "mediaSrc": "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80",
+      "layout": "right"
+    }
+  ],
+  "summary": {
+    "title": "全行业通用架构",
+    "items": [
+      { "title": "快速适配", "desc": "只需定义行业 Spec，即可生成专用 Agent。" },
+      { "title": "安全合规", "desc": "天然符合行业监管要求。" }
+    ]
+  }
+}

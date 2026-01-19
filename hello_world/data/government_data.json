@@ -1,0 +1,33 @@
+{
+  "theme": "government",
+  "hero": {
+    "title": "让政务工作流像代码一样精准高效",
+    "subTitle": "覆盖数据报表生成、标准化公文写作、招投标全流程跟踪及内部数据治理。",
+    "bgImage": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&q=80"
+  },
+  "features": [
+    {
+      "title": "智能公文与招投标",
+      "subtitle": "Smart Documentation",
+      "description": "SpecAgent 内置国家标准公文格式规范。输入核心要点，自动生成符合GB/T 9704标准的公文；自动抓取全网招标公告，根据企业资质生成高分投标文件草稿。",
+      "mediaType": "image",
+      "mediaSrc": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80",
+      "layout": "left"
+    },
+    {
+      "title": "数据报表与动态治理",
+      "subtitle": "Data Governance",
+      "description": "基于Spec的数据清洗Agent。自动识别非标数据，清洗、整合并生成可视化的决策仪表盘，打破内部数据孤岛。",
+      "mediaType": "image",
+      "mediaSrc": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80",
+      "layout": "right"
+    }
+  ],
+  "summary": {
+    "title": "为什么选择我们的政务方案？",
+    "items": [
+      { "title": "私有化部署", "desc": "数据不出域，模型本地跑，确保信息绝对安全。" },
+      { "title": "溯源可查", "desc": "每一个生成的文字都有据可依，操作日志全记录。" }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "theme": "aviation",
+  "hero": {
+    "title": "定义航空业的数字副驾驶",
+    "subTitle": "从情报分析到维修派遣，以严苛的航空标准驱动每一次决策。",
+    "bgImage": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80"
+  },
+  "features": [
+    {
+      "title": "航空情报 AI 分析",
+      "subtitle": "Aeronautical Intelligence",
+      "description": "自动解析NOTAMs (航行通告) 和气象报文。将复杂的文本信息转化为可视化的飞行风险地图，辅助签派员快速决策。",
+      "mediaType": "image",
+      "mediaSrc": "https://images.unsplash.com/photo-1540962351504-03099e0a754b?auto=format&fit=crop&q=80",
+      "layout": "left"
+    },
+    {
+      "title": "票务调仓与收益管理",
+      "subtitle": "Smart Ticketing",
+      "description": "实时监控全网票务库存。基于Spec设定的收益规则，毫秒级自动调仓与改价，最大化航线收益。",
+      "mediaType": "image",
+      "mediaSrc": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80",
+      "layout": "right"
+    },
+    {
+      "title": "维修派遣与追踪 (MRO)",
+      "subtitle": "MRO Tracking",
+      "description": "飞机维修手册(AMM)数字化。Agent根据故障代码(Fault Code)直接关联维修工卡，调度适配的航材与工程师。",
+      "mediaType": "image",
+      "mediaSrc": "https://images.unsplash.com/photo-1580436541340-e7a32d5f84cb?auto=format&fit=crop&q=80",
+      "layout": "left"
+    }
+  ],
+  "summary": {
+    "title": "航空级安全保障",
+    "items": [
+      { "title": "99.999% 精准", "desc": "零容错的算法设计，保障飞行安全。" },
+      { "title": "实时响应", "desc": "毫秒级数据处理，应对突发气象变化。" }
+    ]
+  }
+}

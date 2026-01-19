@@ -1,0 +1,33 @@
+{
+  "theme": "design",
+  "hero": {
+    "title": "Specification IS Design",
+    "subTitle": "Say goodbye to tedious slicing and redlining. Let Design System specs directly drive the production workflow.",
+    "bgImage": "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&q=80"
+  },
+  "features": [
+    {
+      "title": "Spec-Driven Workflow Automation",
+      "subtitle": "Spec-Driven Workflow",
+      "description": "Designers only need to maintain Design Tokens and component library specs. Agents automatically generate high-fidelity UI interfaces compliant with specs based on requirement docs, maintaining design consistency.",
+      "mediaType": "image",
+      "mediaSrc": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80",
+      "layout": "left"
+    },
+    {
+      "title": "AI Design Copilot",
+      "subtitle": "AI Design Assistant",
+      "description": "Asset retrieval, color palette suggestions, batch layer renaming, multi-size adaptation. SpecAgent is your inspiration amplifier.",
+      "mediaType": "image",
+      "mediaSrc": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80",
+      "layout": "right"
+    }
+  ],
+  "summary": {
+    "title": "Unleash Creative Potential",
+    "items": [
+      { "title": "Consistency Guaranteed", "desc": "100% adherence to design specs, eliminating visual deviations." },
+      { "title": "Efficiency Multiplied", "desc": "Automate tedious tasks, letting designers return to creativity itself." }
+    ]
+  }
+}

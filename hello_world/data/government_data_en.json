@@ -1,0 +1,33 @@
+{
+  "theme": "government",
+  "hero": {
+    "title": "Making Government Workflows as Precise as Code",
+    "subTitle": "Covering data report generation, standardized document writing, bidding process tracking, and internal data governance.",
+    "bgImage": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&q=80"
+  },
+  "features": [
+    {
+      "title": "Smart Documentation & Bidding",
+      "subtitle": "Smart Documentation",
+      "description": "SpecAgent includes built-in national standard document formatting specs. Input key points to automatically generate documents compliant with GB/T 9704 standards; crawl bidding announcements network-wide and generate high-scoring bid drafts based on enterprise qualifications.",
+      "mediaType": "image",
+      "mediaSrc": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80",
+      "layout": "left"
+    },
+    {
+      "title": "Data Reporting & Dynamic Governance",
+      "subtitle": "Data Governance",
+      "description": "Spec-based Data Cleaning Agent. Automatically identifies non-standard data, cleans, integrates, and generates visualized decision dashboards, breaking down internal data silos.",
+      "mediaType": "image",
+      "mediaSrc": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80",
+      "layout": "right"
+    }
+  ],
+  "summary": {
+    "title": "Why Choose Our Government Solutions?",
+    "items": [
+      { "title": "Private Deployment", "desc": "Data stays within the domain, models run locally, ensuring absolute information security." },
+      { "title": "Traceable", "desc": "Every generated word is evidence-backed, with full operation logs recorded." }
+    ]
+  }
+}

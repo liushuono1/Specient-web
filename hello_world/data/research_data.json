@@ -1,0 +1,33 @@
+{
+  "theme": "research",
+  "hero": {
+    "title": "加速人类认知的边界扩张",
+    "subTitle": "从文献综述到实验设计，SpecAgent 为科研全流程提供标准化的智能辅助。",
+    "bgImage": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80"
+  },
+  "features": [
+    {
+      "title": "科研信息 AI 检索与综述",
+      "subtitle": "Intelligent Retrieval",
+      "description": "不止是搜索关键词。Agent 理解科研逻辑，从海量 Paper 中提取实验数据、对比方法论，自动生成文献综述大纲。",
+      "mediaType": "image",
+      "mediaSrc": "https://images.unsplash.com/photo-1507668016688-87749010f0c1?auto=format&fit=crop&q=80",
+      "layout": "left"
+    },
+    {
+      "title": "科研流程 Spec 驱动辅助工具",
+      "subtitle": "Experiment Spec",
+      "description": "将实验步骤标准化为 Spec 代码。Agent 辅助检查实验设计的逻辑漏洞，甚至自动控制实验室仪器，减少人为误差。",
+      "mediaType": "image",
+      "mediaSrc": "https://images.unsplash.com/photo-1581093458891-2f30890918b5?auto=format&fit=crop&q=80",
+      "layout": "right"
+    }
+  ],
+  "summary": {
+    "title": "严谨与探索并重",
+    "items": [
+      { "title": "逻辑验证", "desc": "形式化验证确保实验设计无逻辑硬伤。" },
+      { "title": "知识发现", "desc": "跨学科知识关联，激发新的科研灵感。" }
+    ]
+  }
+}

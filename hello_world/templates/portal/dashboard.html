@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}SpecAgent AI - {{ page_data.dashboard.welcome }}{% endblock %}
+
+{% block content %}
+<div class="min-h-screen bg-spec-bg pt-8">
+    
+    <!-- Top Bar -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
+        <div class="flex items-center justify-between py-6 border-b border-spec-earth/20">
+            <div>
+                <h1 class="text-3xl font-bold text-spec-navy">{{ page_data.dashboard.welcome }}, <span class="text-spec-earth">{{ page_data.dashboard.guest_user }}</span></h1>
+                <p class="text-gray-600 mt-1">{{ page_data.dashboard.plan_info }}</p>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="text-right hidden sm:block">
+                    <div class="text-sm text-spec-navy font-medium">Spec Engine v2.0</div>
+                    <div class="text-xs text-gray-500">{{ page_data.dashboard.last_login }}</div>
+                </div>
+                <div class="h-10 w-10 rounded-full bg-gradient-to-tr from-spec-earth to-spec-gold p-[2px]">
+                    <div class="h-full w-full rounded-full bg-white flex items-center justify-center text-xs font-bold text-spec-navy">GU</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section: Recommended Demos -->
+        <h2 class="text-xl font-bold text-spec-navy mb-6 flex items-center">
+            <svg class="w-5 h-5 mr-2 text-spec-earth" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            {{ page_data.dashboard.available_demos }}
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            {% for demo in page_data.dashboard.demos %}
+            <!-- Demo Card -->
+            <a href="/portal/demo/{{ demo.id }}" class="group bg-white rounded-xl border border-spec-earth/20 p-6 hover:border-spec-earth hover:shadow-lg hover:shadow-spec-earth/10 transition-all">
+                <div class="h-10 w-10 bg-spec-bg rounded-lg flex items-center justify-center mb-4 text-spec-navy group-hover:text-spec-earth transition-colors text-2xl">
+                    {{ demo.icon }}
+                </div>
+                <h3 class="text-lg font-bold text-spec-navy mb-2">{{ demo.title }}</h3>
+                <p class="text-sm text-gray-600 mb-4">{{ demo.desc }}</p>
+                <span class="text-xs font-mono text-spec-earth flex items-center">{{ page_data.dashboard.launch_sandbox }} <span class="ml-2 group-hover:translate-x-1 transition-transform">→</span></span>
+            </a>
+            {% endfor %}
+            
+            <!-- More Coming Soon -->
+            <div class="border border-dashed border-gray-300 rounded-xl p-6 flex flex-col items-center justify-center text-center opacity-70">
+                <div class="text-3xl mb-2">🚀</div>
+                <p class="text-sm text-gray-500">More industries coming soon...</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}SpecAgent AI - {{ page_data.hero.title }}{% endblock %}
+
+{% block content %}
+<!-- Industry Hero -->
+<section class="relative min-h-[60vh] flex items-center justify-center bg-spec-bg overflow-hidden">
+    {% if page_data.hero.bgImage %}
+    <div class="absolute inset-0 z-0 opacity-10 mix-blend-multiply">
+        <img src="{{ page_data.hero.bgImage }}" alt="Background" class="w-full h-full object-cover grayscale">
+    </div>
+    <div class="absolute inset-0 bg-gradient-to-t from-spec-bg via-transparent to-transparent z-0"></div>
+    {% endif %}
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
+        <span class="inline-block py-1 px-3 rounded-full bg-spec-earth/10 text-spec-earth text-sm font-semibold mb-6 uppercase tracking-wider border border-spec-earth/30">
+            Industry Solution
+        </span>
+        <h1 class="text-4xl md:text-6xl font-bold text-spec-navy mb-6 animate-fade-in-up">
+            {{ page_data.hero.title }}
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed animate-fade-in-up delay-100">
+            {{ page_data.hero.subTitle }}
+        </p>
+    </div>
+</section>
+
+<!-- Features List -->
+<section class="py-20 bg-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
+        {% for feature in page_data.features %}
+            <div class="flex flex-col {% if feature.layout == 'right' %}md:flex-row-reverse{% else %}md:flex-row{% endif %} items-center gap-12 group">
+                <!-- Text Content -->
+                <div class="w-full md:w-1/2 space-y-6">
+                    <div class="inline-block text-spec-earth font-mono font-bold tracking-widest uppercase text-sm mb-2">
+                        0{{ forloop.counter }} / {{ feature.subtitle }}
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-spec-navy group-hover:text-spec-earth transition-colors duration-300">
+                        {{ feature.title }}
+                    </h2>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        {{ feature.description }}
+                    </p>
+                    <div class="pt-4">
+                        <span class="inline-flex items-center text-spec-earth font-semibold cursor-pointer hover:underline">
+                            {{ common_data.ui.view_simulation }} <span class="ml-2">→</span>
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- Media Content -->
+                <div class="w-full md:w-1/2">
+                    <div class="relative rounded-xl overflow-hidden shadow-xl border border-spec-earth/20 bg-spec-bg aspect-video group-hover:shadow-spec-earth/20 transition-all duration-500 transform group-hover:scale-[1.02]">
+                        {% if feature.mediaType == 'image' %}
+                        <img src="{{ feature.mediaSrc }}" alt="{{ feature.title }}" class="w-full h-full object-cover">
+                        {% else %}
+                        <div class="flex items-center justify-center h-full text-spec-navy/30 bg-gray-50">
+                            {{ common_data.ui.video_placeholder }}
+                        </div>
+                        {% endif %}
+                        
+                        <!-- Overlay Effect -->
+                        <div class="absolute inset-0 bg-spec-navy opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- Summary / Key Benefits -->
+{% if page_data.summary %}
+<section class="py-20 bg-spec-bg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-spec-navy">{{ page_data.summary.title }}</h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-{{ page_data.summary.items|length }} gap-8">
+            {% for item in page_data.summary.items %}
+            <div class="p-8 bg-white rounded-xl border border-spec-earth/20 text-center hover:bg-gray-50 transition-colors shadow-sm">
+                <h3 class="text-xl font-bold text-spec-navy mb-3">{{ item.title }}</h3>
+                <p class="text-gray-600">{{ item.desc }}</p>
+            </div>
+            {% endfor %}
+        </div>
+        
+        <div class="mt-16 text-center">
+            <a href="/portal/login" class="inline-block px-10 py-4 bg-spec-earth text-white font-bold rounded-full hover:bg-opacity-90 transition-all shadow-lg shadow-spec-earth/20">
+                {{ common_data.ui.experience_demo }}
+            </a>
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% endblock %}

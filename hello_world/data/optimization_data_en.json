@@ -1,0 +1,66 @@
+{
+  "hero": {
+    "title": "Self-Evolving Intelligent Agents",
+    "description": "SpecAgent not only follows specifications but also maintains them. Through Meta-Spec, it achieves self-check, self-repair, and code evolution, ensuring long-term stable system operation."
+  },
+  "evolutionLoop": {
+    "title": "Spec Evolution Loop",
+    "description": "Feedback-based closed-loop optimization mechanism",
+    "steps": [
+      {
+        "id": "1",
+        "title": "Detect Anomaly",
+        "icon": "alert-circle",
+        "desc": "Runtime monitoring captures execution deviations or performance bottlenecks"
+      },
+      {
+        "id": "2",
+        "title": "Diagnosis",
+        "icon": "activity",
+        "desc": "Log-based analysis to locate conflicts between Spec definitions and actual scenarios"
+      },
+      {
+        "id": "3",
+        "title": "Generate Fix",
+        "icon": "cpu",
+        "desc": "Generate new Spec patches or Constraint constraints"
+      },
+      {
+        "id": "4",
+        "title": "Simulation",
+        "icon": "check-circle",
+        "desc": "Verify the correctness and safety of the new Spec in a sandbox environment"
+      },
+      {
+        "id": "5",
+        "title": "Hot Deploy",
+        "icon": "zap",
+        "desc": "Seamlessly update the Agent's execution specifications"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "Before vs. After Optimization",
+    "before": {
+      "label": "Before Optimization (V1.0)",
+      "desc": "Static logic, lack of elasticity, prone to interruption when encountering unexpected edge cases.",
+      "code": "def process_request(req):\n    # Only handles predefined standard processes\n    if req.type == 'standard':\n        execute(req)\n    else:\n        # Directly raises error on unknown types\n        raise UnknownTypeError()"
+    },
+    "after": {
+      "label": "After Optimization (V1.1)",
+      "desc": "Introduces dynamic Spec constraints, automatically generating fallback strategies and exception branches.",
+      "code": "@spec.adaptive()\ndef process_request(req):\n    # Spec automatically deduces processing logic\n    strategy = derive_strategy(req)\n    \n    if strategy.is_safe():\n        execute(req, strategy)\n    else:\n        # Automatically triggers human intervention or degraded service\n        escalate_to_human(req)\n        spec.learn(req) # Feedback learning"
+    }
+  },
+  "simulation": {
+    "title": "Real-time Evolution Logs",
+    "logs": [
+      {"timestamp": "10:42:01", "level": "WARN", "msg": "Detected ambiguity in 'UserIntent' classification schema."},
+      {"timestamp": "10:42:02", "level": "INFO", "msg": "Initiating Meta-Spec diagnosis agent..."},
+      {"timestamp": "10:42:05", "level": "INFO", "msg": "Generated patch: Refine 'UserIntent' spec with 3 new edge case examples."},
+      {"timestamp": "10:42:08", "level": "SUCCESS", "msg": "Validation passed (Reliability Score: 0.98)."},
+      {"timestamp": "10:42:09", "level": "INFO", "msg": "Hot-swapping Spec module V1.2.3..."},
+      {"timestamp": "10:42:10", "level": "INFO", "msg": "Deployment complete. System running on optimized spec."}
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "theme": "research",
+  "hero": {
+    "title": "Accelerating the Expansion of Human Knowledge Boundaries",
+    "subTitle": "From literature review to experimental design, SpecAgent provides standardized intelligent assistance for the entire research process.",
+    "bgImage": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80"
+  },
+  "features": [
+    {
+      "title": "AI Research Retrieval & Review",
+      "subtitle": "Intelligent Retrieval",
+      "description": "More than just keyword search. The Agent understands research logic, extracting experimental data and comparative methodologies from massive numbers of papers, automatically generating literature review outlines.",
+      "mediaType": "image",
+      "mediaSrc": "https://images.unsplash.com/photo-1507668016688-87749010f0c1?auto=format&fit=crop&q=80",
+      "layout": "left"
+    },
+    {
+      "title": "Spec-Driven Research Process Tools",
+      "subtitle": "Experiment Spec",
+      "description": "Standardizing experimental steps into Spec code. The Agent helps check for logical loopholes in experimental designs and can even automatically control laboratory instruments, reducing human error.",
+      "mediaType": "image",
+      "mediaSrc": "https://images.unsplash.com/photo-1581093458891-2f30890918b5?auto=format&fit=crop&q=80",
+      "layout": "right"
+    }
+  ],
+  "summary": {
+    "title": "Rigor Meets Exploration",
+    "items": [
+      { "title": "Logical Validation", "desc": "Formal verification ensures no logical flaws in experimental design." },
+      { "title": "Knowledge Discovery", "desc": "Interdisciplinary knowledge association, sparking new research inspiration." }
+    ]
+  }
+}

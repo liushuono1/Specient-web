@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}SpecAgent AI - {{ page_data.login.sign_in_btn }}{% endblock %}
+
+{% block extra_head %}
+<style>
+    /* Hide the main navigation on login page for focus */
+    .glass-nav { display: none; }
+    footer { display: none; }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="min-h-screen flex bg-spec-bg">
+    <!-- Left: Brand / Visual -->
+    <div class="hidden lg:flex w-1/2 relative overflow-hidden bg-spec-navy items-center justify-center">
+        <!-- Abstract Background -->
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1639322537228-ad506d131550?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-20 mix-blend-overlay"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-spec-navy/80 to-transparent"></div>
+        
+        <div class="relative z-10 p-12 text-white max-w-lg">
+            <h2 class="text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-spec-earth to-spec-gold">SpecAgent.AI</h2>
+            <p class="text-xl text-gray-200 leading-relaxed mb-8">
+                {{ page_data.login.brand_slogan }}
+            </p>
+            <div class="flex gap-4">
+                <div class="px-4 py-2 bg-black/20 rounded-lg border border-spec-earth/30 text-spec-earth font-mono text-sm">{{ page_data.login.validating_specs }}</div>
+                <div class="px-4 py-2 bg-black/20 rounded-lg border border-spec-earth/30 text-spec-gold font-mono text-sm">{{ page_data.login.agent_active }}</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right: Login Form -->
+    <div class="w-full lg:w-1/2 flex items-center justify-center p-8 bg-white">
+        <div class="w-full max-w-md space-y-8">
+            <div class="text-center lg:text-left">
+                <a href="/" class="text-2xl font-bold text-spec-earth lg:hidden mb-8 inline-block">SpecAgent<span class="text-spec-navy">.AI</span></a>
+                <h2 class="text-3xl font-bold text-spec-navy">{{ page_data.login.title }}</h2>
+                <p class="mt-2 text-sm text-gray-500">{{ page_data.login.subtitle }}</p>
+            </div>
+
+            <form class="mt-8 space-y-6" action="/portal/dashboard" method="GET"> 
+                <!-- Mocking form action to dashboard for demo purposes -->
+                
+                <div class="space-y-4">
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-600">{{ page_data.login.email_label }}</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required 
+                            class="mt-1 block w-full px-3 py-3 bg-gray-50 border border-gray-200 rounded-md text-spec-navy placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-spec-earth focus:border-transparent transition-all"
+                            placeholder="name@company.com">
+                    </div>
+                    <div>
+                        <label for="password" class="block text-sm font-medium text-gray-600">{{ page_data.login.password_label }}</label>
+                        <input id="password" name="password" type="password" autocomplete="current-password" required 
+                            class="mt-1 block w-full px-3 py-3 bg-gray-50 border border-gray-200 rounded-md text-spec-navy placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-spec-earth focus:border-transparent transition-all"
+                            placeholder="••••••••">
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 text-spec-earth focus:ring-spec-earth border-gray-300 rounded">
+                        <label for="remember-me" class="ml-2 block text-sm text-gray-900">
+                            {{ page_data.login.remember_me }}
+                        </label>
+                    </div>
+
+                    <div class="text-sm">
+                        <a href="#" class="font-medium text-spec-earth hover:text-spec-earth/80">
+                            {{ page_data.login.forgot_password }}
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit" class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-spec-navy hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-spec-earth shadow-lg shadow-spec-navy/30 transition-all">
+                        {{ page_data.login.sign_in_btn }}
+                    </button>
+                </div>
+            </form>
+            
+            <div class="mt-6 text-center">
+                <p class="text-sm text-gray-600">
+                    {{ page_data.login.no_account }}
+                    <a href="#" class="font-medium text-spec-earth hover:text-spec-earth/80">{{ page_data.login.contact_sales }}</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

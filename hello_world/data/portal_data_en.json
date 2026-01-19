@@ -1,0 +1,44 @@
+{
+  "login": {
+    "title": "Welcome back to SpecAgent Console",
+    "subtitle": "Please sign in to access your demos",
+    "brand_slogan": "Building the brain of future enterprises. We provide Spec-driven intelligent agents to ensure every decision is safe, compliant, and precise.",
+    "email_label": "Work Email",
+    "password_label": "Password",
+    "remember_me": "Remember me",
+    "forgot_password": "Forgot password?",
+    "sign_in_btn": "Sign in",
+    "no_account": "No account yet?",
+    "contact_sales": "Contact Sales",
+    "validating_specs": "Validating Specs...",
+    "agent_active": "Agent Active"
+  },
+  "dashboard": {
+    "welcome": "Dashboard",
+    "guest_user": "Guest User",
+    "plan_info": "Enterprise Plan · Active",
+    "last_login": "Last login: Just now",
+    "available_demos": "Available Industry Demos",
+    "launch_sandbox": "Launch Sandbox",
+    "demos": [
+      {
+        "id": "government",
+        "title": "Government & Enterprise",
+        "desc": "Smart document generation and compliant data governance demos.",
+        "icon": "🏛️"
+      },
+      {
+        "id": "aviation",
+        "title": "Aviation",
+        "desc": "Aeronautical intelligence analysis and MRO maintenance scheduling.",
+        "icon": "✈️"
+      },
+      {
+        "id": "education",
+        "title": "Education",
+        "desc": "Personalized AI tutor and academic administration demos.",
+        "icon": "🎓"
+      }
+    ]
+  }
+}

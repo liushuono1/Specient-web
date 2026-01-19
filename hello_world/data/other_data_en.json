@@ -1,0 +1,33 @@
+{
+  "theme": "default",
+  "hero": {
+    "title": "Infinite Possibilities in More Fields",
+    "subTitle": "Medical, Legal, Financial Compliance... Wherever there are rules, SpecAgent delivers value.",
+    "bgImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2672&auto=format&fit=crop"
+  },
+  "features": [
+    {
+      "title": "Healthcare Compliance & Diagnostic Support",
+      "subtitle": "Healthcare",
+      "description": "Based on clinical guideline Specs, assisting doctors in differential diagnosis and ensuring prescription compliance with insurance regulations.",
+      "mediaType": "image",
+      "mediaSrc": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80",
+      "layout": "left"
+    },
+    {
+      "title": "Legal Documentation & Contract Review",
+      "subtitle": "Legal Tech",
+      "description": "Automatically reviewing contract clause risks and generating legal opinions based on the latest legal Specs, significantly reducing legal costs.",
+      "mediaType": "image",
+      "mediaSrc": "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80",
+      "layout": "right"
+    }
+  ],
+  "summary": {
+    "title": "Universal Industry Architecture",
+    "items": [
+      { "title": "Rapid Adaptation", "desc": "Simply define industry Specs to generate dedicated Agents." },
+      { "title": "Safety & Compliance", "desc": "Inherently compliant with industry regulations." }
+    ]
+  }
+}

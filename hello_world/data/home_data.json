@@ -1,0 +1,113 @@
+{
+  "heroSection": {
+    "title": "Spec驱动智能，重构行业规则",
+    "subTitle": "从模糊的指令到精准的执行。SpecAgent AI 将严格的规范(Spec)与生成式AI的灵活性结合，为政企、航空、科研等领域提供零差错的智能代理服务。",
+    "ctaButtons": [
+      {
+        "text": "探索解决方案",
+        "link": "#solutions",
+        "type": "primary"
+      },
+      {
+        "text": "观看演示",
+        "link": "/portal/demo/general",
+        "type": "secondary"
+      }
+    ]
+  },
+  "valueProposition": {
+    "title": "为什么选择 Spec 驱动？",
+    "description": "传统的LLM容易产生幻觉。我们将行业标准(Standard)、操作规范(Spec)转化为Agent不仅能读懂，更能严格遵守的代码约束。",
+    "items": [
+      {
+        "icon": "lock",
+        "title": "确定性",
+        "desc": "Deterministic"
+      },
+      {
+        "icon": "ruler",
+        "title": "可解释",
+        "desc": "Explainable"
+      },
+      {
+        "icon": "shield",
+        "title": "行业合规",
+        "desc": "Compliant"
+      }
+    ]
+  },
+  "industries": [
+    {
+      "id": "government",
+      "name": "政企业务",
+      "desc": "数据治理与公文写作的自动化专家",
+      "longDesc": "深度集成政务数据规范，实现公文自动生成、审批流程自动化与政策合规性检查。",
+      "link": "/solutions/government",
+      "tags": ["公文生成", "合规检查", "数据治理"],
+      "icon": "building",
+      "gridClass": "md:col-span-2 md:row-span-2",
+      "color": "from-blue-600 to-blue-800",
+      "bgImage": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2670&auto=format&fit=crop"
+    },
+    {
+      "id": "aviation",
+      "name": "航空行业",
+      "desc": "保障每一次飞行的精准调度与维护",
+      "longDesc": "基于AMM手册与运行规范，提供智能维修助手与航班调度优化方案。",
+      "link": "/solutions/aviation",
+      "tags": ["运行调度", "维修辅助", "安全合规"],
+      "icon": "plane",
+      "gridClass": "md:col-span-1 md:row-span-2",
+      "color": "from-sky-500 to-indigo-600",
+      "bgImage": "https://images.unsplash.com/photo-1436853378352-e52147848eb3?q=80&w=2574&auto=format&fit=crop"
+    },
+    {
+      "id": "education",
+      "name": "教育培训",
+      "desc": "AI教员，重塑职业技能传承",
+      "longDesc": "将专家经验转化为标准SOP课程，提供个性化辅导与实操评分。",
+      "link": "/solutions/education",
+      "tags": ["SOP教学", "智能评分"],
+      "icon": "academic",
+      "gridClass": "md:col-span-1 md:row-span-1",
+      "color": "from-emerald-500 to-teal-700",
+      "bgImage": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2670&auto=format&fit=crop"
+    },
+    {
+      "id": "research",
+      "name": "科研领域",
+      "desc": "加速实验流程，从文献到发现",
+      "longDesc": "自动化文献综述与实验步骤规划，确保科研数据的可追溯性。",
+      "link": "/solutions/research",
+      "tags": ["实验设计", "文献分析"],
+      "icon": "flask",
+      "gridClass": "md:col-span-1 md:row-span-1",
+      "color": "from-purple-500 to-violet-700",
+      "bgImage": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=2670&auto=format&fit=crop"
+    },
+    {
+      "id": "design",
+      "name": "设计领域",
+      "desc": "从规范文档直接生成合规设计",
+      "longDesc": "解析设计系统(Design System)文档，自动生成符合品牌规范的UI/UX资产。",
+      "link": "/solutions/design",
+      "tags": ["Design Token", "UI生成", "规范较验"],
+      "icon": "swatch",
+      "gridClass": "md:col-span-2 md:row-span-1",
+      "color": "from-pink-500 to-rose-600",
+      "bgImage": "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=2564&auto=format&fit=crop"
+    },
+    {
+      "id": "other",
+      "name": "更多领域",
+      "desc": "SpecAgent 架构适用于所有依赖严格规范的复杂场景。",
+      "longDesc": "医疗、法律、金融合规... 只要有规则，SpecAgent 就能发挥价值。",
+      "link": "/solutions/other",
+      "tags": ["医疗", "法律", "金融"],
+      "icon": "dots",
+      "gridClass": "md:col-span-2 md:row-span-1",
+      "color": "from-gray-600 to-gray-800",
+      "bgImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2672&auto=format&fit=crop"
+    }
+  ]
+}

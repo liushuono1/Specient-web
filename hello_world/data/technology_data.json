@@ -1,0 +1,60 @@
+{
+  "hero": {
+    "title": "什么是 Spec 驱动？",
+    "description": "大语言模型擅长发散，工业应用需要收敛。Spec 是我们给模型戴上的“理性枷锁”，确保每一次输出都符合严格的业务规范。"
+  },
+  "concept": {
+    "title": "从自然语言到严格规范",
+    "steps": [
+      {
+        "label": "用户指令",
+        "content": "“帮我预订去北京的机票，要国航，经济舱，政策严一点”",
+        "type": "natural"
+      },
+      {
+        "label": "SpecAgent 转换层",
+        "content": "NLP 解析 + 形式化验证 (Formal Verification)",
+        "type": "processing"
+      },
+      {
+        "label": "执行 Spec",
+        "content": "{ \"action\": \"book_flight\", \"params\": { \"airline\": \"CA\", \"class\": \"economy\", \"policy_check\": \"strict\" } }",
+        "type": "code"
+      }
+    ]
+  },
+  "architecture": {
+    "title": "技术架构",
+    "layers": [
+      {
+        "name": "感知层 (Perception)",
+        "desc": "多模态输入处理：文本指令、图像识别、传感器数据读取。"
+      },
+      {
+        "name": "决策层 (Reasoning)",
+        "desc": "Spec 引擎 + LLM 大脑。实时校验业务逻辑，拒绝幻觉，确保合规。"
+      },
+      {
+        "name": "执行层 (Actuation)",
+        "desc": "API 连接器，RPA 机器人，物理设备接口，将决策转化为行动。"
+      }
+    ]
+  },
+  "advantages": [
+    {
+      "key": "Safety",
+      "title": "安全可靠",
+      "desc": "任何偏离 Spec 的操作都会被即时拦截，确保系统运行在安全边界内。"
+    },
+    {
+      "key": "Interoperability",
+      "title": "无缝集成",
+      "desc": "轻松集成到现有的 ERP、CRM、OA 系统，无需重构现有IT设施。"
+    },
+    {
+      "key": "Customizability",
+      "title": "低代码定制",
+      "desc": "客户无需懂代码，只需用自然语言定义业务 Spec 即可生成专用 Agent。"
+    }
+  ]
+}
