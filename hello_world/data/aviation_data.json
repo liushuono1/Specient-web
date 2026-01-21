@@ -3,7 +3,7 @@
   "hero": {
     "title": "定义航空业的数字副驾驶",
     "subTitle": "从情报分析到维修派遣，以严苛的航空标准驱动每一次决策。",
-    "bgImage": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80"
+    "bgImage": "/static/images/cached/764598e83afb1a566c37c58050c7e9a5.jpg"
   },
   "features": [
     {
@@ -11,7 +11,7 @@
       "subtitle": "Aeronautical Intelligence",
       "description": "自动解析NOTAMs (航行通告) 和气象报文。将复杂的文本信息转化为可视化的飞行风险地图，辅助签派员快速决策。",
       "mediaType": "image",
-      "mediaSrc": "https://images.unsplash.com/photo-1540962351504-03099e0a754b?auto=format&fit=crop&q=80",
+      "mediaSrc": "/static/images/cached/af808985ed03138864d375b2e7910aee.jpg",
       "layout": "left"
     },
     {
@@ -19,7 +19,7 @@
       "subtitle": "Smart Ticketing",
       "description": "实时监控全网票务库存。基于Spec设定的收益规则，毫秒级自动调仓与改价，最大化航线收益。",
       "mediaType": "image",
-      "mediaSrc": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80",
+      "mediaSrc": "/static/images/cached/764598e83afb1a566c37c58050c7e9a5.jpg",
       "layout": "right"
     },
     {
@@ -27,7 +27,7 @@
       "subtitle": "MRO Tracking",
       "description": "飞机维修手册(AMM)数字化。Agent根据故障代码(Fault Code)直接关联维修工卡，调度适配的航材与工程师。",
       "mediaType": "image",
-      "mediaSrc": "https://images.unsplash.com/photo-1580436541340-e7a32d5f84cb?auto=format&fit=crop&q=80",
+      "mediaSrc": "/static/images/cached/d4117e484fd798f719eb9ca0ff6a8bb5.jpg",
       "layout": "left"
     }
   ],

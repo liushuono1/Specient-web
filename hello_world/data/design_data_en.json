@@ -3,7 +3,7 @@
   "hero": {
     "title": "Specification IS Design",
     "subTitle": "Say goodbye to tedious slicing and redlining. Let Design System specs directly drive the production workflow.",
-    "bgImage": "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&q=80"
+    "bgImage": "/static/images/cached/3afcf6ea0a83b5f362908b3b661642d4.jpg"
   },
   "features": [
     {
@@ -11,15 +11,15 @@
       "subtitle": "Spec-Driven Workflow",
       "description": "Designers only need to maintain Design Tokens and component library specs. Agents automatically generate high-fidelity UI interfaces compliant with specs based on requirement docs, maintaining design consistency.",
       "mediaType": "image",
-      "mediaSrc": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80",
+      "mediaSrc": "/static/images/cached/b47bbb483c0449f33c6dc069e0027cf4.jpg",
       "layout": "left"
     },
     {
       "title": "AI Design Copilot",
       "subtitle": "AI Design Assistant",
-      "description": "Asset retrieval, color palette suggestions, batch layer renaming, multi-size adaptation. SpecAgent is your inspiration amplifier.",
+      "description": "Asset retrieval, color palette suggestions, batch layer renaming, multi-size adaptation. Specient is your inspiration amplifier.",
       "mediaType": "image",
-      "mediaSrc": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80",
+      "mediaSrc": "/static/images/cached/076be1e95bfe199000043a988d5cebaa.jpg",
       "layout": "right"
     }
   ],

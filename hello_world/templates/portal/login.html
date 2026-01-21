@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}SpecAgent AI - {{ page_data.login.sign_in_btn }}{% endblock %}
+{% block title %}{{ common_data.navbar.brand }} - {{ page_data.login.sign_in_btn }}{% endblock %}
 
 {% block extra_head %}
 <style>
@@ -16,11 +16,17 @@
     <!-- Left: Brand / Visual -->
     <div class="hidden lg:flex w-1/2 relative overflow-hidden bg-spec-navy items-center justify-center">
         <!-- Abstract Background -->
-        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1639322537228-ad506d131550?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-20 mix-blend-overlay"></div>
+        <div class="absolute inset-0 bg-[url('/static/images/cached/cd5a2edb3d4db0c930c06a896ad9f022.jpg')] bg-cover bg-center opacity-20 mix-blend-overlay"></div>
         <div class="absolute inset-0 bg-gradient-to-r from-spec-navy/80 to-transparent"></div>
         
         <div class="relative z-10 p-12 text-white max-w-lg">
-            <h2 class="text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-spec-earth to-spec-gold">SpecAgent.AI</h2>
+            <div class="mb-6">
+                {% if current_lang == 'en' %}
+                    <img src="{% static 'logo2.png' %}" alt="Specient" class="h-20 w-auto">
+                {% else %}
+                    <img src="{% static 'logo1.PNG' %}" alt="Specient 万象智体" class="h-20 w-auto">
+                {% endif %}
+            </div>
             <p class="text-xl text-gray-200 leading-relaxed mb-8">
                 {{ page_data.login.brand_slogan }}
             </p>
@@ -35,7 +41,13 @@
     <div class="w-full lg:w-1/2 flex items-center justify-center p-8 bg-white">
         <div class="w-full max-w-md space-y-8">
             <div class="text-center lg:text-left">
-                <a href="/" class="text-2xl font-bold text-spec-earth lg:hidden mb-8 inline-block">SpecAgent<span class="text-spec-navy">.AI</span></a>
+                <a href="/" class="lg:hidden mb-8 inline-block">
+                    {% if current_lang == 'en' %}
+                        <img src="{% static 'logo2.png' %}" alt="Specient" class="h-12 w-auto">
+                    {% else %}
+                        <img src="{% static 'logo1.PNG' %}" alt="Specient 万象智体" class="h-12 w-auto">
+                    {% endif %}
+                </a>
                 <h2 class="text-3xl font-bold text-spec-navy">{{ page_data.login.title }}</h2>
                 <p class="mt-2 text-sm text-gray-500">{{ page_data.login.subtitle }}</p>
             </div>

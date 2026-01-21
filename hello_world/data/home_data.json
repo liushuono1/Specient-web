@@ -1,7 +1,8 @@
 {
   "heroSection": {
-    "title": "Spec驱动智能，重构行业规则",
+    "title": "Specient 万象智体",
     "subTitle": "从模糊的指令到精准的执行。SpecAgent AI 将严格的规范(Spec)与生成式AI的灵活性结合，为政企、航空、科研等领域提供零差错的智能代理服务。",
+    "description": "把工程 / 业务规范（Spec）变成可执行的 AI Agent，直接嵌入客户核心流程。",
     "ctaButtons": [
       {
         "text": "探索解决方案",
@@ -47,7 +48,7 @@
       "icon": "building",
       "gridClass": "md:col-span-2 md:row-span-2",
       "color": "from-blue-600 to-blue-800",
-      "bgImage": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2670&auto=format&fit=crop"
+      "bgImage": "/static/images/cached/35589233d7b0c1e63ee9f6000b4ff461.jpg"
     },
     {
       "id": "aviation",
@@ -59,7 +60,7 @@
       "icon": "plane",
       "gridClass": "md:col-span-1 md:row-span-2",
       "color": "from-sky-500 to-indigo-600",
-      "bgImage": "https://images.unsplash.com/photo-1436853378352-e52147848eb3?q=80&w=2574&auto=format&fit=crop"
+      "bgImage": "/static/images/cached/d4117e484fd798f719eb9ca0ff6a8bb5.jpg"
     },
     {
       "id": "education",
@@ -71,7 +72,7 @@
       "icon": "academic",
       "gridClass": "md:col-span-1 md:row-span-1",
       "color": "from-emerald-500 to-teal-700",
-      "bgImage": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2670&auto=format&fit=crop"
+      "bgImage": "/static/images/cached/af896de9d52478750e5e3af7e615753d.jpg"
     },
     {
       "id": "research",
@@ -83,7 +84,7 @@
       "icon": "flask",
       "gridClass": "md:col-span-1 md:row-span-1",
       "color": "from-purple-500 to-violet-700",
-      "bgImage": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=2670&auto=format&fit=crop"
+      "bgImage": "/static/images/cached/f09cfc0b416959b91af57724444fe1ab.jpg"
     },
     {
       "id": "design",
@@ -95,19 +96,19 @@
       "icon": "swatch",
       "gridClass": "md:col-span-2 md:row-span-1",
       "color": "from-pink-500 to-rose-600",
-      "bgImage": "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=2564&auto=format&fit=crop"
+      "bgImage": "/static/images/cached/28a4956725b6dc1ac61e11e93793540f.jpg"
     },
     {
       "id": "other",
       "name": "更多领域",
-      "desc": "SpecAgent 架构适用于所有依赖严格规范的复杂场景。",
-      "longDesc": "医疗、法律、金融合规... 只要有规则，SpecAgent 就能发挥价值。",
+      "desc": "Specient 架构适用于所有依赖严格规范的复杂场景。",
+      "longDesc": "医疗、法律、金融合规... 只要有规则，Specient 就能发挥价值。",
       "link": "/solutions/other",
       "tags": ["医疗", "法律", "金融"],
       "icon": "dots",
       "gridClass": "md:col-span-2 md:row-span-1",
       "color": "from-gray-600 to-gray-800",
-      "bgImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2672&auto=format&fit=crop"
+      "bgImage": "/static/images/cached/eb212d46a4ff388f994e1644d74e0071.jpg"
     }
   ]
 }

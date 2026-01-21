@@ -12,7 +12,7 @@
         "type": "natural"
       },
       {
-        "label": "SpecAgent Transformation Layer",
+        "label": "Specient Transformation Layer",
         "content": "NLP Parsing + Formal Verification",
         "type": "processing"
       },
@@ -56,5 +56,18 @@
       "title": "Low-Code Customization",
       "desc": "Customers don't need to know code; simply define business Specs in natural language to generate dedicated Agents."
     }
-  ]
+  ],
+  "gallery": {
+    "title": "Tech Architecture Evolution",
+    "images": [
+      "/static/techppt/slide_2.png",
+      "/static/techppt/slide_3.png",
+      "/static/techppt/slide_4.png",
+      "/static/techppt/slide_7.png",
+      "/static/techppt/slide_8.png",
+      "/static/techppt/slide_9.png",
+      "/static/techppt/slide_10.png",
+      "/static/techppt/slide_21.png"
+    ]
+  }
 }

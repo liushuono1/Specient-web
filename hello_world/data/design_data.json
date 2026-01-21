@@ -3,7 +3,7 @@
   "hero": {
     "title": "规范即设计",
     "subTitle": "告别繁琐的切图与标注。让设计规范(Design System)直接驱动生产流程。",
-    "bgImage": "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&q=80"
+    "bgImage": "/static/images/cached/3afcf6ea0a83b5f362908b3b661642d4.jpg"
   },
   "features": [
     {
@@ -11,15 +11,15 @@
       "subtitle": "Spec-Driven Workflow",
       "description": "设计师只需维护 Design Token 和 组件库规范。Agent 自动根据需求文档生成符合规范的高保真 UI 界面，保持设计一致性。",
       "mediaType": "image",
-      "mediaSrc": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80",
+      "mediaSrc": "/static/images/cached/b47bbb483c0449f33c6dc069e0027cf4.jpg",
       "layout": "left"
     },
     {
       "title": "AI 辅助设计 Copilot",
       "subtitle": "AI Design Assistant",
-      "description": "素材检索、色彩搭配建议、批量图层重命名、多尺寸适配。SpecAgent 是你身边的灵感扩音器。",
+      "description": "素材检索、色彩搭配建议、批量图层重命名、多尺寸适配。Specient 是你身边的灵感扩音器。",
       "mediaType": "image",
-      "mediaSrc": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80",
+      "mediaSrc": "/static/images/cached/076be1e95bfe199000043a988d5cebaa.jpg",
       "layout": "right"
     }
   ],

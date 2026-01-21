@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "Self-Evolving Intelligent Agents",
-    "description": "SpecAgent not only follows specifications but also maintains them. Through Meta-Spec, it achieves self-check, self-repair, and code evolution, ensuring long-term stable system operation."
+    "description": "Specient not only follows specifications but also maintains them. Through Meta-Spec, it achieves self-check, self-repair, and code evolution, ensuring long-term stable system operation."
   },
   "evolutionLoop": {
     "title": "Spec Evolution Loop",

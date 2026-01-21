@@ -1,15 +1,18 @@
 {
   "navbar": {
-    "brand": "Specient",
-    "links": [
-      {"name": "首页", "url": "/"},
-      {"name": "核心技术", "url": "/technology"},
-      {"name": "行业方案", "url": "/#solutions", "is_dropdown": true},
-      {"name": "自我演进", "url": "/optimization"},
-      {"name": "开发者", "url": "/portal/login"}
-    ],
-    "login": "控制台登录",
-    "demo": "预约演示"
+    "brand": "Specient 万象智体",
+    "home": "首页",
+    "technology": "核心技术",
+    "optimization": "自我演进",
+    "solutions": "行业方案",
+    "solutions_list": {
+      "gov": "政府",
+      "aviation": "航空业",
+      "edu": "制造业",
+      "design": "设计院",
+      "research": "工业企业"
+    },
+    "portal": "开发者"
   },
   "footer": {
     "copyright": "© 2026 Specient. All rights reserved."

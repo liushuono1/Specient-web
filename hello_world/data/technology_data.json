@@ -12,7 +12,7 @@
         "type": "natural"
       },
       {
-        "label": "SpecAgent 转换层",
+        "label": "Specient 转换层",
         "content": "NLP 解析 + 形式化验证 (Formal Verification)",
         "type": "processing"
       },
@@ -56,5 +56,18 @@
       "title": "低代码定制",
       "desc": "客户无需懂代码，只需用自然语言定义业务 Spec 即可生成专用 Agent。"
     }
-  ]
+  ],
+  "gallery": {
+    "title": "技术架构演进",
+    "images": [
+      "/static/techppt/slide_2.png",
+      "/static/techppt/slide_3.png",
+      "/static/techppt/slide_4.png",
+      "/static/techppt/slide_7.png",
+      "/static/techppt/slide_8.png",
+      "/static/techppt/slide_9.png",
+      "/static/techppt/slide_10.png",
+      "/static/techppt/slide_21.png"
+    ]
+  }
 }

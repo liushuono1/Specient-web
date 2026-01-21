@@ -62,11 +62,11 @@
 
 ### 3.5 自我演进页 (Self-Optimization Page)
 展示 SpecAgent 如何通过元 Spec (Meta-Spec) 实现自我检查、自我修复与代码演进。
-- [x] **数据准备**: 创建 `optimization_data.json`。
-- [x] **页面开发**: 
-    - [x] 可视化展示 "Spec 演进循环" (Loop)。
-    - [x] 对比展示 "优化前 vs 优化后" 的代码/Spec 片段。
-    - [x] 实时日志流模拟 (Simulation Log)。
+- [ ] **数据准备**: 创建 `optimization_data.json`。
+- [ ] **页面开发**: 
+    - [ ] 可视化展示 "Spec 演进循环" (Loop)。
+    - [ ] 对比展示 "优化前 vs 优化后" 的代码/Spec 片段。
+    - [ ] 实时日志流模拟 (Simulation Log)。
 
 ## 4. 登录与 Demo 系统 (Client Portal)
 - [x] **登录页**

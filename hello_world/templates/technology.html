@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}SpecAgent AI - 核心技术{% endblock %}
+{% block title %}{{ common_data.navbar.brand }} - 核心技术{% endblock %}
 
 {% block content %}
 <!-- Technology Hero -->
@@ -52,25 +52,85 @@
     </div>
 </section>
 
-<!-- Architecture Layers -->
-<section class="py-20 bg-spec-bg">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-spec-navy mb-16 text-center">{{ page_data.architecture.title }}</h2>
-        
-        <div class="space-y-6 max-w-4xl mx-auto">
-            {% for layer in page_data.architecture.layers %}
-            <div class="bg-white border-l-4 border-spec-earth p-8 rounded-r-lg shadow-md hover:bg-gray-50 transition-colors flex flex-col md:flex-row items-start md:items-center">
-                <div class="md:w-1/3 mb-4 md:mb-0">
-                    <h3 class="text-xl font-bold text-spec-navy">{{ layer.name }}</h3>
+<!-- Technical Architecture (PPT Slides - Scrollytelling Full Width) -->
+{% if page_data.gallery %}
+<section class="bg-spec-bg relative">
+    <!-- Scroll Track using JS Scrollytelling -->
+    <div id="ppt-scroll-track" class="relative" style="height: {% widthratio page_data.gallery.images|length 1 120 %}vh;">
+        <div class="sticky top-0 h-screen w-full overflow-hidden flex flex-col">
+             
+             <!-- Floating Title Overlay -->
+             <div class="absolute top-0 left-0 w-full z-30 pt-6 pb-12 bg-gradient-to-b from-spec-bg via-spec-bg/80 to-transparent pointer-events-none">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-spec-navy mb-2 tracking-wide">{{ page_data.architecture.title }}</h2>
+                    <div class="h-1 w-20 bg-spec-earth mx-auto rounded-full"></div>
                 </div>
-                <div class="md:w-2/3">
-                    <p class="text-gray-600">{{ layer.desc }}</p>
+             </div>
+
+             <!-- Slide Container -->
+             <div class="relative w-full h-full flex items-center justify-center bg-spec-bg">
+                {% for img_path in page_data.gallery.images %}
+                <div class="ppt-slide absolute inset-0 flex items-center justify-center transition-all duration-1000 ease-in-out transform {% if forloop.first %}opacity-100 translate-y-0 scale-100 z-10{% else %}opacity-0 translate-y-8 scale-95 z-0{% endif %}" data-index="{{ forloop.counter0 }}">
+                    <!-- Full Viewport Image Container -->
+                    <div class="w-full flex items-center justify-center">
+                         <img src="{{ img_path }}" alt="Technical Architecture Spec" class="w-full h-auto object-cover shadow-2xl">
+                    </div>
                 </div>
-            </div>
-            {% endfor %}
+                {% endfor %}
+             </div>
         </div>
     </div>
 </section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const track = document.getElementById('ppt-scroll-track');
+        const slides = document.querySelectorAll('.ppt-slide');
+        const slideCount = slides.length;
+        
+        if (!track || slideCount === 0) return;
+
+        function updateSlides() {
+            const rect = track.getBoundingClientRect();
+            const viewportHeight = window.innerHeight;
+            const trackHeight = rect.height;
+            const scrollableDistance = trackHeight - viewportHeight;
+            
+            // Calculate scrolled distance relative to track start
+            let scrolled = -rect.top;
+            
+            // Normalize progress between 0 and 1
+            let progress = 0;
+            if (scrolled > 0) {
+                progress = scrolled / scrollableDistance;
+            }
+            if (progress < 0) progress = 0;
+            if (progress > 1) progress = 1;
+
+            // Determine active slide index
+            // We multiply by slightly less than count so the last slide 'sticks' for a bit at the end
+            let activeIndex = Math.floor(progress * (slideCount - 0.05));
+            if (activeIndex >= slideCount) activeIndex = slideCount - 1;
+            
+            slides.forEach((slide, index) => {
+                // Active slide
+                if (index === activeIndex) {
+                    slide.classList.remove('opacity-0', 'translate-y-8', 'scale-95', 'z-0');
+                    slide.classList.add('opacity-100', 'translate-y-0', 'scale-100', 'z-10');
+                } else {
+                    slide.classList.remove('opacity-100', 'translate-y-0', 'scale-100', 'z-10');
+                    slide.classList.add('opacity-0', 'translate-y-8', 'scale-95', 'z-0');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateSlides, { passive: true });
+        window.addEventListener('resize', updateSlides);
+        // Initial check
+        updateSlides();
+    });
+</script>
+{% endif %}
 
 <!-- Advantages -->
 <section class="py-20 bg-white">
@@ -85,4 +145,5 @@
         </div>
     </div>
 </section>
+
 {% endblock %}

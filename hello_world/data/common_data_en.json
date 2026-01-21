@@ -1,15 +1,18 @@
 {
   "navbar": {
     "brand": "Specient",
-    "links": [
-      {"name": "Home", "url": "/"},
-      {"name": "Technology", "url": "/technology"},
-      {"name": "Solutions", "url": "/#solutions", "is_dropdown": true},
-      {"name": "Self-Evolution", "url": "/optimization"},
-      {"name": "Developers", "url": "/portal/login"}
-    ],
-    "login": "Console",
-    "demo": "Book Demo"
+    "home": "Home",
+    "technology": "Technology",
+    "optimization": "Self-Evolution",
+    "solutions": "Solutions",
+    "solutions_list": {
+      "gov": "Government",
+      "aviation": "Aviation",
+      "edu": "Manufacturing",
+      "design": "Design Institutes",
+      "research": "Industrial"
+    },
+    "portal": "Developers"
   },
   "footer": {
     "copyright": "© 2026 Specient. All rights reserved."

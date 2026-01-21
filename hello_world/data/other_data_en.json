@@ -2,8 +2,8 @@
   "theme": "default",
   "hero": {
     "title": "Infinite Possibilities in More Fields",
-    "subTitle": "Medical, Legal, Financial Compliance... Wherever there are rules, SpecAgent delivers value.",
-    "bgImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2672&auto=format&fit=crop"
+    "subTitle": "Medical, Legal, Financial Compliance... Wherever there are rules, Specient delivers value.",
+    "bgImage": "/static/images/cached/eb212d46a4ff388f994e1644d74e0071.jpg"
   },
   "features": [
     {
@@ -11,7 +11,7 @@
       "subtitle": "Healthcare",
       "description": "Based on clinical guideline Specs, assisting doctors in differential diagnosis and ensuring prescription compliance with insurance regulations.",
       "mediaType": "image",
-      "mediaSrc": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80",
+      "mediaSrc": "/static/images/cached/dd893ea7e8842dee40d5c711e24d993d.jpg",
       "layout": "left"
     },
     {
@@ -19,7 +19,7 @@
       "subtitle": "Legal Tech",
       "description": "Automatically reviewing contract clause risks and generating legal opinions based on the latest legal Specs, significantly reducing legal costs.",
       "mediaType": "image",
-      "mediaSrc": "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80",
+      "mediaSrc": "/static/images/cached/19fcf5f9e07e87bd87efc9ee2e2b0bac.jpg",
       "layout": "right"
     }
   ],

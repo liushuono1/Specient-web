@@ -3,7 +3,7 @@
   "hero": {
     "title": "Scalable Personalized Education",
     "subTitle": "AI-Enhanced Vocational Training. Not just an assistant for instructors, but the digital brain of the institution.",
-    "bgImage": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80"
+    "bgImage": "/static/images/cached/c8e428bdabdb8d851b2e135ffbb714cd.jpg"
   },
   "features": [
     {
@@ -11,7 +11,7 @@
       "subtitle": "AI Tutor",
       "description": "Every student gets a dedicated AI tutor. Based on Spec-defined syllabi, Agents provide 24/7 Q&A and simulated assessments, freeing up instructor energy.",
       "mediaType": "image",
-      "mediaSrc": "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&q=80",
+      "mediaSrc": "/static/images/cached/e252b56738e306706f6630d9839553f3.jpg",
       "layout": "left"
     },
     {
@@ -19,7 +19,7 @@
       "subtitle": "Lifecycle Management",
       "description": "From lead cleansing and student profiling to post-graduation employment tracking. Agents automate tedious administrative tasks, improving operational efficiency.",
       "mediaType": "image",
-      "mediaSrc": "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80",
+      "mediaSrc": "/static/images/cached/e1108ceed6aa745645e387420dd19c7f.jpg",
       "layout": "right"
     }
   ],

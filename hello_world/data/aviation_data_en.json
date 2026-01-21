@@ -3,7 +3,7 @@
   "hero": {
     "title": "Defining the Digital Co-Pilot for Aviation",
     "subTitle": "From intelligence analysis to maintenance dispatch, driving every decision with rigorous aviation standards.",
-    "bgImage": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80"
+    "bgImage": "/static/images/cached/764598e83afb1a566c37c58050c7e9a5.jpg"
   },
   "features": [
     {
@@ -11,7 +11,7 @@
       "subtitle": "Aeronautical Intelligence",
       "description": "Automatically parses NOTAMs and meteorological reports. Transforms complex text information into visualized flight risk maps to assist dispatchers in rapid decision-making.",
       "mediaType": "image",
-      "mediaSrc": "https://images.unsplash.com/photo-1540962351504-03099e0a754b?auto=format&fit=crop&q=80",
+      "mediaSrc": "/static/images/cached/af808985ed03138864d375b2e7910aee.jpg",
       "layout": "left"
     },
     {
@@ -19,7 +19,7 @@
       "subtitle": "Smart Ticketing",
       "description": "Real-time monitoring of network-wide ticket inventory. Millisecond-level automatic fare adjustment and re-booking based on Spec-defined revenue rules to maximize route revenue.",
       "mediaType": "image",
-      "mediaSrc": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80",
+      "mediaSrc": "/static/images/cached/764598e83afb1a566c37c58050c7e9a5.jpg",
       "layout": "right"
     },
     {
@@ -27,7 +27,7 @@
       "subtitle": "MRO Tracking",
       "description": "Digitization of Aircraft Maintenance Manuals (AMM). Agents directly associate Fault Codes with maintenance job cards, scheduling appropriate parts and engineers.",
       "mediaType": "image",
-      "mediaSrc": "https://images.unsplash.com/photo-1580436541340-e7a32d5f84cb?auto=format&fit=crop&q=80",
+      "mediaSrc": "/static/images/cached/d4117e484fd798f719eb9ca0ff6a8bb5.jpg",
       "layout": "left"
     }
   ],

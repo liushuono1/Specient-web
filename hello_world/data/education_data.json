@@ -3,7 +3,7 @@
   "hero": {
     "title": "规模化的因材施教",
     "subTitle": "职业培训 AI 化增强。不仅是教员的助手，更是机构的数智化大脑。",
-    "bgImage": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80"
+    "bgImage": "/static/images/cached/c8e428bdabdb8d851b2e135ffbb714cd.jpg"
   },
   "features": [
     {
@@ -11,7 +11,7 @@
       "subtitle": "AI Tutor",
       "description": "每个学生都拥有专属的 AI 陪练。基于 Spec 定义的教学大纲，Agent 进行 24/7 的答疑与模拟考核，解放教员精力。",
       "mediaType": "image",
-      "mediaSrc": "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&q=80",
+      "mediaSrc": "/static/images/cached/e252b56738e306706f6630d9839553f3.jpg",
       "layout": "left"
     },
     {
@@ -19,7 +19,7 @@
       "subtitle": "Lifecycle Management",
       "description": "从招生线索清洗、学生档案建立，到结业后的就业跟踪。Agent 自动化处理繁琐的行政事务，提升运营效率。",
       "mediaType": "image",
-      "mediaSrc": "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80",
+      "mediaSrc": "/static/images/cached/e1108ceed6aa745645e387420dd19c7f.jpg",
       "layout": "right"
     }
   ],
